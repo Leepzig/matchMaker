@@ -1,17 +1,19 @@
 import React from "react"
+import { Link, useRouteMatch } from "react-router-dom"
 
 
-function ProfileCard({user :{name, photo, aboutMe, hobbies }}) {
+function ProfileCard({user :{name, photo, bio, likes, id }}) {
 
- const hobbyArray = hobbies.map(element => <li key={element}>{element}</li>)
+ const match = useRouteMatch()
+
 
   return (
-    <div id="about">
-      <h3>{name}</h3>
-      <img src={photo.img} alt={photo.imgAlt}></img>
-      <p>{aboutMe}</p>
+    <div className="ui card">
+      <Link to={`${match.url}/${id}`}><h3>{name}</h3></Link>
+      <img src={photo} alt="profile headshot"></img>
+      <p>{bio}</p>
       <ul>
-        {hobbyArray}
+        {likes}
       </ul>
     </div>
   )
