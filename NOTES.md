@@ -2,8 +2,9 @@
 
 ## TODO
 - DONE: login username matches with  a profile username
-- Home displays MyProfile
+- DONE: Home displays MyProfile
 - Style
+- have only the correct interestedIn show up under matches
 
 ## Stretch
 - MyProfile is editable

@@ -1,28 +1,9 @@
 {
-  "testusers": [
-    {
-      "name": "Jessie",
-      "photo": "sdfsdf",
-      "bio": "sdfsd",
-      "likes": "sfds",
-      "dislikes": "sfdsdf",
-      "interestedIn": "all",
-      "id": 1
-    },
-    {
-      "name": "Jessie",
-      "photo": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBUVFRgVFRUYGBgSGBoZGBgaGBgcGhkYGBgZGRgYGBgcIS4lHB4rIRgYJjgmKy8xNTU1GiQ7QDs0Py40NTEBDAwMEA8QGhISGjEhISE0NDQxNDQxMTQxNDQ0NDQ0NDQ0NDQ0NDQxNDQ0NDQxNDQ0NDQ0NDQ0Pz8xMT80NDExNP/AABEIAOoA2AMBIgACEQEDEQH/xAAbAAAABwEAAAAAAAAAAAAAAAAAAQIDBAUGB//EAD0QAAIBAgQEAwUGBQMEAwAAAAECAAMRBBIhMQVBUWEGInETMoGRoQdCcrHB0TNSguHwI2LxFCSSsxY0U//EABkBAAMBAQEAAAAAAAAAAAAAAAABAgMEBf/EACIRAQEBAQACAgIDAQEAAAAAAAABEQIDIRIxQVEiMmEEcf/aAAwDAQACEQMRAD8A6t7OA0o9BJ1rhgUofs47Ekw0YaZIw0edpGeVEdejbxsiOBTFinNNZ3m0zaR/vnXkP8+sshRlViT/ANwicgCx7m36afMQ+R88VMUiQuIcVSlcG2lr6jQnl+Xzma8VeIAp9kj3ykl7Na7DZA3T9plOH8R9rWTUhdmZjcgkEA69Jn13+m/Pin5bv/5Qg87lUQ6KTclrbkLve8ZfxcbnKmnIuQGbpZRtfuZjeNcOZWV/aoQAPvDcXGijfYayCmcm2Yvtay+XvIvVXOOZfp0XB+IA+jXRrXJJsPhbl6yXh+PFmCIQxzEEk3yqLebve+0wT0ai3XJc2B0N7Jvfra94vDuEOdWW7DVb797de8J1VXnn8OpYbEO29j0IGnobneS0fkd5heEcfA0zA2Fyu3bTuLTUYfi1NwCWsTtfb5ytlZ3mxbERBifaLoQ4IPePMsE01AYoxMZChwRxVhow0VhZZIKxOSGlhrLBHssENPD94V4UAESwMS0XaFaBGikSacfyw7RaWGFpwq1I5Tb/AD0kgCG20ejMV1HiCsjW1",
-      "bio": "sdfsdf",
-      "likes": "horseback riding",
-      "dislikes": "sdf",
-      "interestedIn": "women",
-      "id": 2
-    }
-  ],
   "users": [
     {
       "id": 1,
       "name": "Andrew",
+      "gender": "male",
       "photo": "https://i0.wp.com/www.austenauthors.net/wp-content/uploads/2019/10/Darcy1995.jpg?fit=602%2C652&ssl=1",
       "bio": "I'm the quiet shy type....",
       "likes": "reading",
@@ -32,6 +13,7 @@
     {
       "id": 2,
       "name": "Bob",
+      "gender": "male",
       "photo": "https://upload.wikimedia.org/wikipedia/en/thumb/c/c5/Bob_the_builder.jpg/220px-Bob_the_builder.jpg",
       "bio": "I am really funny and charming. The life of the party one might say...",
       "likes": "talking",
@@ -41,6 +23,7 @@
     {
       "id": 3,
       "name": "Darcy",
+      "gender": "male",
       "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxS2BlkKHaJp0mj9lfz_W-rQEbq6QGqQjHyQ&usqp=CAU",
       "bio": "I am the quiet mysterious type, you might find me off in the corner quietly watching everyone, waiting to make eye contact",
       "likes": "judging others",
@@ -49,15 +32,17 @@
     },
     {
       "name": "William",
+      "gender": "male",
       "photo": "https://pm1.narvii.com/6344/2fc81092489f81d5b9ff634fd7b867bdabe6bf75_hq.jpg",
       "bio": "a gentleman at heart",
       "likes": "horseback riding",
       "dislikes": "scoundrels",
-      "interestedIn": "women",
+      "interestedIn": "female",
       "id": 4
     },
     {
       "name": "Harry",
+      "gender": "male",
       "photo": "https://cdn.businessinsider.es/sites/navi.axelspringer.es/public/styles/1200/public/media/image/2019/01/there-are-some-things-you-might-not-know-about-harry-potter-series.jpg?itok=jLL5olkk",
       "bio": "I'm big and bad because I have a scar. Boo!",
       "likes": "flying on brooms",
@@ -67,39 +52,53 @@
     },
     {
       "name": "Hermy",
+      "gender": "female",
       "photo": "data:image/jpeg;base64,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",
       "bio": "I am a book person...I study and I believe in fighting for those that are oppressed!",
       "likes": "reading and taking classes",
       "dislikes": "mean people",
-      "interestedIn": "",
+      "interestedIn": "male",
       "id": 6
     },
     {
       "name": "Kat",
+      "gender": "female",
       "photo": "https://i2.wp.com/2.bp.blogspot.com/-5M0dvVp5HRk/V8jFJG9OnDI/AAAAAAAACds/SI5Leufdn34D49N4pEj7ATMUxLFl_K83ACLcB/s1600/Katniss.jpg?ssl=1",
       "bio": "I believe in revolutions, I also believe in taking care of those who love me. But the revolution is the my top priority, if you're not okay with that, don't talk to me.",
       "likes": "Pumping tyrants full of arrows",
       "dislikes": "tyrants",
-      "interestedIn": "",
+      "interestedIn": "male",
       "id": 7
     },
     {
       "name": "Arya",
+      "gender": "female",
       "photo": "https://escriturafeminista.files.wordpress.com/2019/05/arya-portada.jpg",
       "bio": "I'm a no nonsense kinda , thing and i don't do pink",
       "likes": "I like to stab things",
       "dislikes": "I hate people with masks",
-      "interestedIn": "",
+      "interestedIn": "male",
       "id": 8
     },
     {
       "name": "Sansa",
+      "gender": "female",
       "photo": "https://static.wikia.nocookie.net/juego-detronos-fanon/images/6/62/Sansa.jpg/revision/latest?cb=20190712172843&path-prefix=es",
       "bio": "I am not naive, and I'll do what I must",
       "likes": "I like dresses",
       "dislikes": "I don't like cruel little boys",
-      "interestedIn": "men",
+      "interestedIn": "male",
       "id": 9
+    },
+    {
+      "name": "Jon",
+      "gender":"male",
+      "photo": "https://peru21.pe/resizer/TXxtyJjG3tta6dCsEvqqccFw_zY=/1200x1200/smart/filters:format(jpeg):quality(75)/arc-anglerfish-arc2-prod-elcomercio.s3.amazonaws.com/public/MHTXJWI6VZFNNKIM3HM5LKBFWE.jpg",
+      "bio": "I'm from the north",
+      "likes": "I like the cold",
+      "dislikes": "I don't like dead people",
+      "interestedIn": "female",
+      "id": 10
     }
   ]
 }

@@ -60,8 +60,8 @@ const SignUp = ({ updateUsersWithNewUser, userLogin }) => {
         <label htmlFor="interestedIn" >Interested In:</label>
         <select name="interestedIn" value={formData.interestedIn} onChange={handleOnChangeInput}>
           <option value="all">No Preference</option>
-          <option value="men">Men</option>
-          <option value="women">Women</option>
+          <option value="male">Men</option>
+          <option value="female">Women</option>
         </select>
         <button type="submit">Submit</button>
       </form>
