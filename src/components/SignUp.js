@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { useHistory } from 'react-router-dom'
 
 
-const SignUp = ({ updateUsersWithNewUser }) => {
+const SignUp = ({ updateUsersWithNewUser, userLogin }) => {
 
   const [formData, setFormData] = useState({
     name:"",
@@ -33,11 +33,9 @@ const SignUp = ({ updateUsersWithNewUser }) => {
     })
     .then(resp => resp.json())
     .then(data => {
-      console.log(data)
-      //question Enoch about needing to update state with new person
       updateUsersWithNewUser(data)
-      // history.push(`/users`)
       history.push(`/users/${data.id}`)
+      userLogin(data)
     })
   }
 

@@ -39,7 +39,7 @@ function App() {
           <Matches users={users}/>
         </Route>
         <Route exact path="/users/new">
-          <SignUp updateUsersWithNewUser={updateUsersWithNewUser}/>
+          <SignUp updateUsersWithNewUser={updateUsersWithNewUser} userLogin={userLogin}/>
         </Route>
         <Route exact path="/users/:id">
           <Profile />

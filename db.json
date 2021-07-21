@@ -82,6 +82,24 @@
       "dislikes": "tyrants",
       "interestedIn": "",
       "id": 7
+    },
+    {
+      "name": "Arya",
+      "photo": "https://escriturafeminista.files.wordpress.com/2019/05/arya-portada.jpg",
+      "bio": "I'm a no nonsense kinda , thing and i don't do pink",
+      "likes": "I like to stab things",
+      "dislikes": "I hate people with masks",
+      "interestedIn": "",
+      "id": 8
+    },
+    {
+      "name": "Sansa",
+      "photo": "https://static.wikia.nocookie.net/juego-detronos-fanon/images/6/62/Sansa.jpg/revision/latest?cb=20190712172843&path-prefix=es",
+      "bio": "I am not naive, and I'll do what I must",
+      "likes": "I like dresses",
+      "dislikes": "I don't like cruel little boys",
+      "interestedIn": "men",
+      "id": 9
     }
   ]
 }
