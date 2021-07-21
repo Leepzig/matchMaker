@@ -45,6 +45,9 @@ const SignUp = ({ updateUsersWithNewUser, userLogin }) => {
         <label htmlFor="name">Name:</label><br></br>
         <input type="text"  name="name" value={formData.name} onChange={handleOnChangeInput}></input>
         <br></br>        
+        <label htmlFor="gender">Gender:</label><br></br>
+        <input type="text"  name="gender" value={formData.gender} onChange={handleOnChangeInput}></input>
+        <br></br>        
         <label htmlFor="photo">Image Url</label><br></br>
         <input type="text" name="photo" value={formData.photo} onChange={handleOnChangeInput}></input>
         <br></br>

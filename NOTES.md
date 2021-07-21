@@ -7,6 +7,4 @@
 - have only the correct interestedIn show up under matches
 
 ## Stretch
-- MyProfile is editable
-- Some kind of mock match is implemented
-- create and use custom hook
+
