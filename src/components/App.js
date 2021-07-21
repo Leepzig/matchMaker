@@ -8,7 +8,7 @@ import {Switch, Route } from "react-router-dom"
 import Profile from "./Profile"
 
 function App() {
-  const [currentUser, setCurrentUser] = useState({})
+  const [currentUser, setCurrentUser] = useState(null)
   const [users, setUsers] = useState([])
 
   useEffect(() => {
@@ -28,13 +28,10 @@ function App() {
 
   return (
     <div>
-      <NavBar />
+      <NavBar currentUser={currentUser} userLogin={userLogin}/>
       <h1>Welcome to Literary MatchMaker</h1>
       <h3>Where we match you to your sterotypical literary match</h3>
       <Switch>
-        <Route path={`/users/${currentUser.id}`}>
-          <Profile userLogin={userLogin} users={users}/>
-        </Route>
         <Route exact path="/login">
           <Login userLogin={userLogin} users={users}/>
         </Route>
