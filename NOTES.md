@@ -8,3 +8,14 @@
 
 ## Stretch
 
+## Styling
+  ### TODO
+  - NavBar
+    - Text is not colored correctly
+  - Style up sign up
+  - Style login
+  - add themed colors throughout
+  - Style profile
+
+  ### DONE
+  - Card-like matches display 

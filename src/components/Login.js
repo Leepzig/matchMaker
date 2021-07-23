@@ -1,8 +1,26 @@
 import React, {useState, useEffect} from  "react"
+import { useHistory } from "react-router-dom"
+import { Link } from "react-router-dom"
+
+import { makeStyles } from '@material-ui/core/styles';
+import TextField from '@material-ui/core/TextField';
+import { Button } from "@material-ui/core"
+
+const useStyles = makeStyles((theme) => ({
+  root: {
+    '& > *': {
+      margin: theme.spacing(1),
+      width: '25ch',
+    },
+  },
+}));
 
 function Login({ userLogin, users}) {
   const [userForm, setUserForm] = useState("")
   const [username, setUserName] = useState("")
+  const history = useHistory()
+
+  const classes = useStyles()
 
   const handleChange = (e) => {
     setUserForm(e.target.value)
@@ -17,12 +35,13 @@ function Login({ userLogin, users}) {
   const matchUsername = () => {
     if (username !== "") {
         const user = users.find( user => user.name === username)
-        // debugger
+
         if (user) {
           userLogin(user)
+          history.push(`users/${user.id}`)
         } else {
           alert("You're not a user!")
-          //TODO redirect to sign up
+
       }
     }
   }
@@ -31,13 +50,12 @@ function Login({ userLogin, users}) {
 
   return (
 <div>
-  <form onSubmit={handleSubmit}>
-    <label>Login</label>
-    <input onChange={handleChange} type="text" value={userForm}></input>
-    <input type="submit"></input>
+  <form onSubmit={handleSubmit} className={classes.root}>
+    <TextField label="Login" onChange={handleChange} type="text" value={userForm}/>
+    <Button type="submit" variant="contained" disableElevation>Submit</Button>
   </form>
   <br></br>
-  <small>Not a member? Sign Up Here!</small>
+  <small>Not a member? Sign Up <Link to="/users/new">Here!</Link></small>
 </div>
   )
 }
