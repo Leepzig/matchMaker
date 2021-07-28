@@ -92,13 +92,33 @@
     },
     {
       "name": "Jon",
-      "gender":"male",
+      "gender": "male",
       "photo": "https://peru21.pe/resizer/TXxtyJjG3tta6dCsEvqqccFw_zY=/1200x1200/smart/filters:format(jpeg):quality(75)/arc-anglerfish-arc2-prod-elcomercio.s3.amazonaws.com/public/MHTXJWI6VZFNNKIM3HM5LKBFWE.jpg",
       "bio": "I'm from the north",
       "likes": "I like the cold",
       "dislikes": "I don't like dead people",
       "interestedIn": "female",
       "id": 10
+    },
+    {
+      "name": "Jessie",
+      "photo": "",
+      "bio": "A cowgirl",
+      "likes": "horses",
+      "dislikes": "mean people",
+      "interestedIn": "male",
+      "gender": "female",
+      "id": 11
+    },
+    {
+      "name": "George",
+      "photo": "",
+      "bio": "I'm a monkey",
+      "likes": "I like asking questions",
+      "dislikes": "I don't like men in yellow hats",
+      "interestedIn": "female",
+      "gender": "male",
+      "id": 12
     }
   ]
 }
